@@ -1,0 +1,38 @@
+Project Technical Report
+Student Name:
+ Ali Ahmed Mohamed 320240162 ( for front-end )
+
+ omar mahmoud ali 320240187 ( for back-end ) 
+
+Project: Lawyer Portfolio Website
+
+1. Front-End Design :
+
+For the design, I wanted the website to look serious and professional because it is for a criminal defense lawyer.
+
+
+HTML : I used standard HTML5 tags like <header>, <section>, and <footer> to keep the code clean and organized. I made sure to separate the pages into clear sections like Home, About, Services, and Contact.
+
+
+CSS: I used a "Dark Mode" style with black and dark grey backgrounds (#121212) and a gold accent color (#D4AF37) to make it look expensive and trustworthy.
+
+Responsiveness: I used "Flexbox" and "Grid" layouts so the columns stack up nicely on mobile phones. I also made a mobile navigation menu that only shows up on small screens.
+
+2. JavaScript Logic ( Simulating the Backend in the front-end )
+
+Since we are not using a real backend server (like PHP or Python) yet, I used JavaScript to handle the logic and data on the client side. I tried to make the site "smart" instead of just static text.
+
+Mini-Database (FAQ Section): Instead of writing the Questions and Answers directly in the HTML, I created a JavaScript array called faqList. This acts like my database. It holds all the question objects.
+
+How it works: I wrote a function createFaqList() that loops through this array and builds the HTML elements automatically. This makes it easy to add or delete questions later just by changing the code array, similar to how a backend fetches data.
+
+Form Handling & Sending : For the Contact Form, I needed a way to handle user messages without a server.
+
+Mechanism: I added an event listener to the "Submit" button. When a user clicks send, the JavaScript stops the page from reloading (using preventDefault).
+
+Feedback: It then grabs the user's name from the input field and triggers an alert saying "Thanks [Name]! We received your message." This simulates the confirmation email a server would usually send.
+
+Navigation Logic: I created a script to manage the mobile menu. It listens for clicks on the "hamburger" icon and toggles a CSS class to show or hide the menu smoothly.
+
+
+
